@@ -247,7 +247,7 @@ struct StringsStructGenerator: ExternalOnlyStructGenerator {
         Function.Parameter(
           name: "preferredLanguages",
           type: Type._Array.withGenericArgs([Type._String]).asOptional(),
-          defaultValue: "nil"
+          defaultValue: [Locale.preferredLanguages]
         )
       ],
       doesThrow: false,
